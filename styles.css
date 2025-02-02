@@ -1,27 +1,33 @@
 @media screen and (min-width: 600px) {
-    .card, .timeline-container {
+    #cardsIntro, #cardTimeline {
       width: 16rem !important;
     }
+
+    #cardTimeline {
+      width: 27rem !important;
+    }
+
+    .timeline-container {
+      left: 210px !important;
+    }
+
+    .event {
+      position: relative  !important;
+      width: 180px  !important;
+    }
+
+    .event.left {
+      left: -210px  !important;
+      text-align: right !important;
+    }
+
 }
 
 .timeline-container {
   position: relative;
-  left: 210px;
-}
+  width: 100%;
+  }
 
-.event {
-  position: relative;
-  padding: 10px 20px;
-  background: #fff;
-  border-radius: 6px;
-  width: 180px;
-}
-
-.event.left {
-  left: -210px;
-  text-align: right;
-}
-
-.event.right {
-  left: 10px;
-}
+  #cardsIntro, #cardTimeline {
+    width: 100%;
+  }
