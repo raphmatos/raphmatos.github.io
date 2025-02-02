@@ -27,67 +27,85 @@
 <body>
 
 
-  <div class="d-flex flex-row mb-3 justify-content-start">
+  <div class="d-flex flex-row mb-3 justify-content-start flex-wrap">
+
     <div class="p-2">
 
-      <div class="card mb-3" style="width: 100%;">
-        <img class="card-img-top" src="laptop.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">A personal website to present my ideas and thoughts</p>
+        <div class="card mb-3" style="width: 100%;">
+          <img class="card-img-top" src="laptop.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">A personal website to present my ideas and thoughts</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Raphael Matos</h5>
+            <p class="card-text">IT Professional</p>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">Raphael Matos</h5>
-          <p class="card-text">IT Professional</p>
+      
+      <div class="card" style="width: 100%;">
+        <div class="card-header">
+          Where you can find me
         </div>
+        <ul class="list-group list-group-flush text-center">
+          <li class="list-group-item text-center">
+            <a href="https://www.linkedin.com/in/raphmatos" target="_blank" rel="noopener noreferrer"><img src="linkedin.png" class="card-img-top me-3" style="width: 17%;" alt="LinkedIn"></a>
+            <a href="https://github.com/raphmatos" target="_blank" rel="noopener noreferrer"><img src="github.png" class="card-img-top me-3" style="width: 17%;" alt="GitHub"></a>
+            <a href="https://www.instagram.com/matos.raph" target="_blank" rel="noopener noreferrer"><img src="instagram.png" class="card-img-top me-3" style="width: 19%;" alt="Instagram"></a>
+            <a href="https://raphamatos.blogspot.com/" target="_blank" rel="noopener noreferrer"><img src="blogger.png" class="card-img-top" style="width: 17%;" alt="Blogger"></a>
+          </li>
+        </ul>
       </div>
-    
-    <div class="card" style="width: 100%;">
-      <div class="card-header">
-        Where you can find me
+
+    </div>
+
+    <div class="timeline-container p-2" style="width: 100%;">
+
+      <div class="event left">
+          <strong>January 2024</strong>
+          <p>Event A Description</p>
       </div>
-      <ul class="list-group list-group-flush text-center">
-        <li class="list-group-item text-center">
-          <a href="https://www.linkedin.com/in/raphmatos" target="_blank" rel="noopener noreferrer"><img src="linkedin.png" class="card-img-top me-3" style="width: 17%;" alt="LinkedIn"></a>
-          <a href="https://github.com/raphmatos" target="_blank" rel="noopener noreferrer"><img src="github.png" class="card-img-top me-3" style="width: 17%;" alt="GitHub"></a>
-          <a href="https://www.instagram.com/matos.raph" target="_blank" rel="noopener noreferrer"><img src="instagram.png" class="card-img-top me-3" style="width: 19%;" alt="Instagram"></a>
-          <a href="https://raphamatos.blogspot.com/" target="_blank" rel="noopener noreferrer"><img src="blogger.png" class="card-img-top" style="width: 17%;" alt="Blogger"></a>
-        </li>
-      </ul>
+
+      <div class="event right">
+          <strong>February 2024</strong>
+          <p>Event B Description</p>
+      </div>
+
+      <div class="event left">
+          <strong>March 2024</strong>
+          <p>Event C Description</p>
+      </div>
+
+      <div class="event right">
+          <strong>April 2024</strong>
+          <p>Event D Description</p>
+      </div>
+
+      <div class="event left">
+        <strong>March 2024</strong>
+        <p>Event C Description</p>
+    </div>
+
+    <div class="event right">
+        <strong>April 2024</strong>
+        <p>Event D Description</p>
+    </div>
+
+    <div class="event left">
+      <strong>March 2024</strong>
+      <p>Event C Description</p>
+    </div>
+
+    <div class="event right">
+      <strong>April 2024</strong>
+      <p>Event D Description</p>
     </div>
 
     </div>
+
   </div>
 
-  <div id="timeline-container" class="p-2"></div>
+  
 
-  <script>
-      const container = document.getElementById('timeline-container');
-      const items = new vis.DataSet([
-          { id: 1, content: 'A', start: '2009-01-01', style: 'background-color: #77C7F7; color: white; padding: 5px; border: 1px solid #77C7F7;' },
-          { id: 2, content: 'B', start: '2011-02-14', style: 'background-color: #77C7F7; color: white; padding: 5px; border: 1px solid #77C7F7;' },
-          { id: 3, content: 'C', start: '2013-01-01', style: 'background-color: #77C7F7; color: white; padding: 5px; border: 1px solid #77C7F7;' },
-          { id: 4, content: 'D', start: '2017-02-14', style: 'background-color: #77C7F7; color: white; padding: 5px; border: 1px solid #77C7F7;' },
-          { id: 5, content: 'E', start: '2021-01-01', style: 'background-color: #77C7F7; color: white; padding: 5px; border: 1px solid #77C7F7;' },
-          { id: 6, content: 'F', start: '2022-02-14', style: 'background-color: #77C7F7; color: white; padding: 5px; border: 1px solid #77C7F7;' },
-          { id: 7, content: 'E', start: '2023-10-09', style: 'background-color: #77C7F7; color: white; padding: 5px; border: 1px solid #77C7F7;' },
-      ]);
-  
-    const options = {
-      start: '2009-12-20',
-      end: '2025-02-01',
-      min: '2009-12-20',
-      max: '2025-02-01',
-      height: '150px',
-      width: '100%',
-      zoomable: false,
-      moveable: true,
-      stack: true,
-      selectable: false,
-      orientation: 'bottom',
-    };
-      const timeline = new vis.Timeline(container, items, options);
-  </script>
-  
 </body>
 
 </html>
