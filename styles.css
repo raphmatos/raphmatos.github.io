@@ -3,3 +3,12 @@
       width: 16rem !important;
     }
   }
+
+.vis-time-axis .vis-text {
+    background-color: white !important;
+    padding: 5px;
+}
+
+.vis-timeline {
+    background-color: white !important;
+}
