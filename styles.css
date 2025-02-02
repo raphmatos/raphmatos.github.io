@@ -21,6 +21,10 @@
       text-align: right !important;
     }
 
+    .event.right {
+      text-align: left !important;
+    }
+
 }
 
 .timeline-container {
